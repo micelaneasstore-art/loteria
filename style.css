@@ -69,8 +69,72 @@ button:hover {
 .proyector #historial {
   display: none;
 }
-
 .proyector .carta-container {
   width: 60vw;
   height: auto;
+}
+  @media (max-width: 768px) {
+.proyector .carta-container {
+    width: 95vw;
+    height: auto;
+  }
+}
+
+/* =========================
+   📱 DISEÑO RESPONSIVO MÓVIL
+========================= */
+@media (max-width: 768px) {
+
+  body {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .carta-container {
+    width: 90vw;
+    height: auto;
+    max-width: 350px;
+  }
+
+  .carta-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .controles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  select {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #historial {
+    max-width: 95%;
+    justify-content: center;
+  }
+
+  #historial img {
+    width: 38px;
+  }
 }
