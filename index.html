@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lotería Mexicana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<h2></h2>
+<div id="historial"></div>
+
+<div class="carta-container">
+  <img id="carta" src="imagenes/1.avif">
+</div>
+
+<div class="botones">
+  <button onclick="sacarCarta()">🎴 Sacar carta</button>
+  <button onclick="reiniciar()">🔄 Reiniciar</button>
+  <button onclick="pantallaCompleta()">🖥 Pantalla completa</button>
+  <button onclick="modoProyector()">📽 Modo proyector</button>
+</div>
+
+<div class="controles">
+  <label>⏱ Automático:
+    <select id="tiempo" onchange="activarAuto()">
+      <option value="0">Desactivado</option>
+      <option value="3">Cada 3 seg</option>
+      <option value="5">Cada 5 seg</option>
+      <option value="8">Cada 8 seg</option>
+    </select>
+  </label>
+
+  <label>🗣 Voz:
+    <select id="vozSelect"></select>
+  </label>
+</div>
+
+<audio id="sonido" src="sonido.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
